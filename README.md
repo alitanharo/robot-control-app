@@ -38,11 +38,17 @@ Before you get started, ensure you have the following installed:
    git clone https://github.com/alitanharo/robot-control-app.git
 Change into the project directory:
 
-cd cli
+cd robot-control-app
 
 Install the project dependencies:
 
 npm install
+ 
+Run the app:
+
+cd cli
+
+npm start
 
 ## Usage
 
