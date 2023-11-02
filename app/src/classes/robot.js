@@ -6,7 +6,7 @@ class Robot {
         this.y = 0;
         this.direction = 'N';
         this.commandString = '';
-        this.robotSize = 2;
+        this.robotSize = 0;
         this.isMoving = false;
         this.state = {
             x: 0,
@@ -94,16 +94,16 @@ class Robot {
             const newPosition = { x: this.x, y: this.y };
             switch (this.direction) {
                 case 'N':
-                    if (Math.abs(newPosition.y) < this.room.wall.y) newPosition.y++;
-                    break;
-                case 'Ö':
-                    if (Math.abs(newPosition.x) < this.room.wall.x) newPosition.x++;
-                    break;
-                case 'S':
                     if (Math.abs(newPosition.y) < this.room.wall.y) newPosition.y--;
                     break;
-                case 'V':
+                case 'Ö':
                     if (Math.abs(newPosition.x) < this.room.wall.x) newPosition.x--;
+                    break;
+                case 'S':
+                    if (Math.abs(newPosition.y) < this.room.wall.y) newPosition.y++;
+                    break;
+                case 'V':
+                    if (Math.abs(newPosition.x) < this.room.wall.x) newPosition.x++;
                     break;
             }
 
