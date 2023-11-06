@@ -97,13 +97,13 @@ class Robot {
                     if (Math.abs(newPosition.y) < this.room.wall.y) newPosition.y--;
                     break;
                 case 'Ö':
-                    if (Math.abs(newPosition.x) < this.room.wall.x) newPosition.x--;
+                    if (Math.abs(newPosition.x) < this.room.wall.x) newPosition.x++;
                     break;
                 case 'S':
                     if (Math.abs(newPosition.y) < this.room.wall.y) newPosition.y++;
                     break;
                 case 'V':
-                    if (Math.abs(newPosition.x) < this.room.wall.x) newPosition.x++;
+                    if (Math.abs(newPosition.x) < this.room.wall.x) newPosition.x--;
                     break;
             }
 

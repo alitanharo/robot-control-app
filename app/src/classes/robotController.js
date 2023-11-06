@@ -72,7 +72,7 @@ class RobotController {
                 clearInterval(intervalId);
                 this.robot.isMoving = false;
                 let currentPath = this.paths[this.paths.length - 1]
-                this.result = `(${Math.abs(currentPath.x)} ${Math.abs(currentPath.y)} ${currentPath.direction} )`
+                this.result = `(${(currentPath.x)} ${(currentPath.y)} ${currentPath.direction} )`
                 this.resultsHistory.push(this.result);
                 console.log(`Final Result: ${this.result}`);
                 console.log('For entering new commands, press "n + Enter".');
